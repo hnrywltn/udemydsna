@@ -43,6 +43,30 @@ function validAnagram(one, two){
     Object.entries(tracker).length&&(res = false)
     return res;
 }
+/////////////////////////////////////////////////////////////
+
+//3rd
+//Use two pointers - found in course
+
+/////////////////////////////////////////////////////////////
+
+//4th
+let countUniqueValues = arr => {
+    if(!arr.length) return 0;
+// debugger
+    let one = 0;
+    let two = 1;
+    while(two < arr.length){
+        let ref = arr[one];
+        let scout = arr[two];
+        if(scout > ref) {
+            one++;
+            arr[one] = scout;
+        }
+        two++;
+    }
+    return one + 1;
+}
 
 
 console.log(same([3, 2, 2, 9],[81, 9, 4, 4]))

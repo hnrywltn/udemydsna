@@ -74,3 +74,8 @@ console.log(same([3, 2, 2, 9],[81, 9, 4, 4]))
 console.log(validAnagram('amanaplanacanalpanama', 'acanalmanplanpamana'))
 console.log(validAnagram('awesome', 'awesom'))
 console.log(validAnagram('aaz', 'zza'))
+
+console.log(countUniqueValues([1,1,1,1,1,1,2]))
+console.log(countUniqueValues([1,2,3,4,4,4,7,7,12,12,13]))
+console.log(countUniqueValues([]))
+console.log(countUniqueValues([-2,-1,-1,0,1]))
